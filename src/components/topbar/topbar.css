@@ -1,0 +1,42 @@
+.topbar {
+  width: 100%;
+  background-color: rgb(197, 198, 204);
+  height: 50px;
+}
+
+.topbarWrapper {
+  height: 100%;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topLeft {
+  padding: 10px;
+  columns: rgb(61, 61, 107);
+}
+.topRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notificationIcons {
+  padding: 5px;
+  cursor: pointer;
+}
+.languageIcon {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.settingsIcon {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.avatarTop {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
