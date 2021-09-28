@@ -1,6 +1,16 @@
 import React from 'react';
 
-import { HomeSharp, TrendingUp, PersonOutline, AttachMoney, BarChart } from '@material-ui/icons';
+import { 
+        HomeSharp, 
+        TrendingUp, 
+        PersonOutline, 
+        AttachMoney, 
+        BarChart,
+        MailOutline,
+        FeedbackOutlined,
+        MessageOutlined,
+        InfoOutlined
+        } from '@material-ui/icons';
 
 import './sidebar.css'
 export default function Sidebar(){
@@ -9,15 +19,15 @@ export default function Sidebar(){
             <div className="section-title">
                 Dashboard
             </div>
-            <div className="section-item">
-                <HomeSharp fontSize="large"/>
-                <div className="title">
+            <div className="section-item active">
+                <HomeSharp fontSize="medium" className="sidebarIcon"/>
+                <div className="section-item-title">
                     Home
                 </div>
             </div>
             <div className="section-item">
-                <TrendingUp fontSize="large"/>
-                <div className="title">
+                <TrendingUp fontSize="medium" className="sidebarIcon"/>
+                <div className="section-item-title">
                     Sales
                 </div>
             </div>
@@ -28,21 +38,51 @@ export default function Sidebar(){
                 Quick menu
             </div>
             <div className="section-item">
-                <PersonOutline fontSize="large"/>
-                <div className="title">
+                <PersonOutline fontSize="medium" className="sidebarIcon"/>
+                <div className="section-item-title">
                     Users
                 </div>
             </div>
             <div className="section-item">
-                <AttachMoney fontSize="large"/>
-                <div className="title">
+                <AttachMoney fontSize="medium" className="sidebarIcon"/>
+                <div className="section-item-title">
                     Transactions
                 </div>
             </div>
             <div className="section-item">
-                <BarChart fontSize="large"/>
+                <BarChart fontSize="medium" className="sidebarIcon"/>
                 Reports
             </div>
+        </div>
+
+
+        <div className="section">
+            <div className="section-title">
+                Notifications
+            </div>
+            <div className="section-item">
+                <MailOutline fontSize="medium" className="sidebarIcon"/>
+                Mail
+            </div>
+            <div className="section-item">
+                <FeedbackOutlined fontSize="medium" className="sidebarIcon"/>
+                Feedbacks
+            </div>
+            <div className="section-item">
+                <MessageOutlined fontSize="medium" className="sidebarIcon"/>
+                Messages
+            </div>
+        </div>
+
+        <div className="section">
+            <div className="section-title">
+                Staff
+            </div>
+            <div className="section-item">
+                <InfoOutlined fontSize="medium" className="sidebarIcon"/>
+                Reports
+            </div>
+            
         </div>
     </div>
 }
