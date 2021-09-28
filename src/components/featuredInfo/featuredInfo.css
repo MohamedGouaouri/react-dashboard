@@ -1,0 +1,31 @@
+.info {
+  display: flex;
+}
+
+.info-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 1px 1px 3px rgb(194, 194, 194);
+}
+.price {
+  display: flex;
+  align-items: baseline;
+  margin: 10px 0;
+}
+.status {
+  margin-left: 10px;
+}
+.negative {
+  color: red;
+}
+.postive {
+  color: green;
+}
+span {
+  margin: 20px 0;
+}
