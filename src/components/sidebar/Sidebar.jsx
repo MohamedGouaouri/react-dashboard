@@ -54,35 +54,5 @@ export default function Sidebar(){
                 Reports
             </div>
         </div>
-
-
-        <div className="section">
-            <div className="section-title">
-                Notifications
-            </div>
-            <div className="section-item">
-                <MailOutline fontSize="medium" className="sidebarIcon"/>
-                Mail
-            </div>
-            <div className="section-item">
-                <FeedbackOutlined fontSize="medium" className="sidebarIcon"/>
-                Feedbacks
-            </div>
-            <div className="section-item">
-                <MessageOutlined fontSize="medium" className="sidebarIcon"/>
-                Messages
-            </div>
-        </div>
-
-        <div className="section">
-            <div className="section-title">
-                Staff
-            </div>
-            <div className="section-item">
-                <InfoOutlined fontSize="medium" className="sidebarIcon"/>
-                Reports
-            </div>
-            
-        </div>
     </div>
 }
