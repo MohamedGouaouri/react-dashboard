@@ -1,15 +1,11 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import { 
         HomeSharp, 
         TrendingUp, 
         PersonOutline, 
         AttachMoney, 
-        BarChart,
-        MailOutline,
-        FeedbackOutlined,
-        MessageOutlined,
-        InfoOutlined
+        BarChart
         } from '@material-ui/icons';
 
 import './sidebar.css'
@@ -19,18 +15,22 @@ export default function Sidebar(){
             <div className="section-title">
                 Dashboard
             </div>
-            <div className="section-item active">
-                <HomeSharp fontSize="medium" className="sidebarIcon"/>
-                <div className="section-item-title">
-                    Home
+            <Link to="/">
+                <div className="section-item">
+                    <HomeSharp fontSize="medium" className="sidebarIcon"/>
+                    <div className="section-item-title">
+                        Home
+                    </div>
                 </div>
-            </div>
-            <div className="section-item">
-                <TrendingUp fontSize="medium" className="sidebarIcon"/>
-                <div className="section-item-title">
-                    Sales
+            </Link>
+            <Link to="/products">
+                <div className="section-item">
+                    <TrendingUp fontSize="medium" className="sidebarIcon"/>
+                    <div className="section-item-title">
+                        Products
+                    </div>
                 </div>
-            </div>
+            </Link>
         </div>
 
         <div className="section">
